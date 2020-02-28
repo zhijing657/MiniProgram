@@ -1,0 +1,13 @@
+<!--pages/button/button.wxml-->
+<text>button</text>
+<button hover-class="push">按钮</button>
+<button size="mini">按钮</button>
+<text>\n</text>
+<button size="mini" type="primary">按钮</button>
+<button size="mini" type="warn">按钮</button>
+<text>\n</text>
+<button size="mini" type="primary" disabled>按钮</button>
+<text>\n</text>
+<button size="mini" type="primary" loading="true">按钮</button>
+<text>\n</text>
+<button size="mini" type="primary" hover-class="push">按钮</button>

@@ -1,0 +1,5 @@
+<!--pages/text/text.wxml-->
+<text selectable>hello zhijing\n</text>
+<text space="nbsp">hello zhijing\n</text>
+<text space="ensp">hello zhijing\n</text>
+<text space="emsp" selectable>hello zhijing\n</text>
