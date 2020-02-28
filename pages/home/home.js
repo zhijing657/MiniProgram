@@ -5,62 +5,43 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    nowTime:new Date().toLocaleString(),
+    age:3,
+    score:50,
+    isAction:true,
+    titles: ['内衣', '裤子', '帽子', '外套']
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    setInterval(() => {
+      this.setData({
+        nowTime: new Date().toLocaleString()
+      })
+    },1000)
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  handleAddAge(){
+    this.setData({
+      age : this.data.age + 5
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+  handleAddScore(){
+    this.setData({
+      score:this.data.score + 10
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
+  handleChangeColor(){
+    this.setData({
+      isAction : !this.data.isAction
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  getMessage(event){
+    
+    const dataset = event.currentTarget.dataset
+    const index = dataset.index
+    const title = dataset.title
+    console.log(index, title)
   }
 })

@@ -1,3 +1,44 @@
 <!--pages/home/home.wxml-->
 <text class="hello">Hello World!</text>
-<image src="https://upload-images.jianshu.io/upload_images/1724024-29d2a8f47f289f7a.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200/format/webp"></image>
+<view>{{nowTime}}</view>
+<button size="mini" type="primary" bindtap="handleAddAge">+5</button>
+<view>{{age>= 18 ? '成年人' : '未成年人'}}</view>
+<view>-------------------------------</view>
+<view wx:if="{{false}}">wx:if</view>
+<button size="mini" type="primary" bindtap="handleAddScore">+5</button>
+<view wx:if="{{score >= 90}}">优秀</view>
+<view wx:elif="{{score >= 80}}">良好</view>
+<view wx:else>不及格</view>
+<view>-------------------------------</view>
+<button size="mini" type="primary" bindtap="handleChangeColor">change</button>
+<view class='{{isAction ? "action" : " "}}'>哈哈哈哈</view>
+
+<wxs module="info">
+  var message = "zhijing";
+  var age = 21;
+  function sum(num1,num2){
+    return num1+num2;
+  }
+
+  module.exports={
+    message:message
+    age:age
+    sum:sum
+  }
+</wxs>
+
+<view>{{info.message}}</view>
+<view>{{info.sum(1,2)}}</view>
+
+<view class="con">
+  <block>
+    <view class="vox" 
+          wx:for="{{titles}}" 
+          wx:key="{{index}}" 
+          bindtap="getMessage"
+          data-title="{{item}}"
+          data-index="{{index}}">
+        {{item}}
+    </view>
+  </block>
+</view>

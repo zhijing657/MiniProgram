@@ -1,3 +1,10 @@
-.hello{
+.action{
   color: red;
+}
+.con{
+  display: flex;
+}
+.vox{
+  flex: 1;
+  text-align: center;
 }
