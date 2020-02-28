@@ -1,0 +1,5 @@
+<!--pages/input/input.wxml-->
+<text>input</text>
+<view></view>
+<label for="name">name:</label>
+<input id="name"></input>

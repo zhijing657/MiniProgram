@@ -1,0 +1,12 @@
+/* pages/input/input.wxss */
+input{
+  border: 2px solid gainsboro;
+  height: 20px;
+  margin-right: 20px;
+}
+
+label{
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+}

@@ -1,0 +1,19 @@
+<!--pages/image/image.wxml-->
+<text>/image</text>
+<!-- 选择机器内的图片 -->
+<button bindtap="getPhoto">选择图片</button>
+
+<image src="{{imagePath}}"></image>
+<view>-----------------------------------------</view>
+<!--bindload 加载完成 -->
+<!-- <image  class="image1"
+        bindload="tellme"
+        src="https://img-blog.csdnimg.cn/20190927151053287.png"
+        wx:for="{{10}}"/> -->
+
+<!-- 懒加载 -->
+<image  class="image1"
+        bindload="tellme"
+        src="https://img-blog.csdnimg.cn/20190927151053287.png"
+        wx:for="{{10}}"
+        lazy-load="true"/>

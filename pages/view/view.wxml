@@ -1,0 +1,3 @@
+<!--pages/view/view.wxml-->
+<text>/view</text>
+<view class="box" hover-class="box-hover" hover-stay-time="0">box</view>

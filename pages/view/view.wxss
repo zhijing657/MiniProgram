@@ -1,0 +1,12 @@
+/* pages/view/view.wxss */
+.box{
+  background: orange;
+  width: 100px;
+  height: 100px;
+}
+.box-hover{
+  background: olivedrab;
+  width: 100px;
+  height: 100px;
+  font-size: 30px;
+}

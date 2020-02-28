@@ -1,0 +1,12 @@
+<!--pages/scoll/scoll.wxml-->
+<text>scoll-x</text>
+
+ <scroll-view class="x" scroll-x>
+    <view class="x1" wx:for="{{10}}">{{item}}</view>
+ </scroll-view>
+
+<text>scoll-y</text>
+
+ <scroll-view class="y" scroll-y>
+    <view class="y1" wx:for="{{10}}">{{item}}</view>
+ </scroll-view>

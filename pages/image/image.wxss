@@ -1,0 +1,7 @@
+/* pages/image/image.wxss */
+.image1{
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+}

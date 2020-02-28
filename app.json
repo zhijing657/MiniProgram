@@ -1,5 +1,9 @@
 {
   "pages": [
+    "pages/scoll/scoll",
+    "pages/input/input",
+    "pages/image/image",
+    "pages/view/view",
     "pages/home/home",
     "pages/about/about"
   ]
