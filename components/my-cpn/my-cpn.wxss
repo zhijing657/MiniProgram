@@ -1,0 +1,7 @@
+/* components/my-cpn/my-cpn.wxss */
+.cpn{
+  width: 200rpx;
+  height: 200rpx;
+  background: orange;
+  border-radius: 10rpx;
+}

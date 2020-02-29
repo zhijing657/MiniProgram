@@ -1,0 +1,2 @@
+<!--components/my-cpn/my-cpn.wxml-->
+<text class="cpn titleclass">{{title}}</text>

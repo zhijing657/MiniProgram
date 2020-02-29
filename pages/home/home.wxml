@@ -1,3 +1,16 @@
 <!--pages/home/home.wxml-->
-<text class="hello">Hello World!</text>
-<image src="https://upload-images.jianshu.io/upload_images/1724024-29d2a8f47f289f7a.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200/format/webp"></image>
+<w-tab-control item="{{['流行','精选','天后','明天']}}"
+                bind:itemclick="handleTabClick"/>
+
+<view>\n</view>
+<button bindtap="handleAddCount" size="mini">改变组件的值</button>
+<my-sel id='my-sel'/>
+
+<my-solt>
+  <button size="mini">我是插槽</button>
+</my-solt>
+<text>\n</text>
+<my-solts>
+  <button size="mini" slot="slot2">我是插槽</button>
+  <slider slot="slot1"></slider>
+</my-solts>

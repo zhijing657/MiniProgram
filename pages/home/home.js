@@ -62,5 +62,16 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  handleTabClick(event){
+    console.log(event)
+  },
+  handleAddCount(){
+    const mysel = this.selectComponent('#my-sel')
+    
+    // mysel.setData({
+    //   count : mysel.data.count + 1
+    // })
+    mysel.addCount(10)
   }
 })
